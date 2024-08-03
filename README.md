@@ -24,3 +24,7 @@ This figures only consider the weights. That is, for `Llama v3.1-70B-FP16`, you 
 - meta-llama/Meta-Llama-3.1-70B (& -Instruct)
 - meta-llama/Meta-Llama-3.1-405B (& -Instruct)
 - meta-llama/Meta-Llama-3.1-405B-FP8 (& -Instruct)
+
+5. The last section of the model looks into Quantization, and the available tools to quantize models that are device-agnostic, or work with CPU. The quantization techniques explored include:
+- Linear quantization with `Quant` and `Accelerate`. Note: this quantization is not serializable
+- Additive Quantization of Language Models with `AQLM` and `Accelerate`
